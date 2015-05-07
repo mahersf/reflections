@@ -1,0 +1,17 @@
+Amplitude modulation
+Possibly the most obvious method of modulating a carrier is to change its amplitude in line with the modulating signal.
+
+The simplest form of amplitude modulation is to employ a system known as 'on–off keying' (OOK), where the carrier is simply turned on and off. This is a very elementary form of digital modulation and was the method used to carry Morse transmissions, which were widely used especially in the early days of 'wireless'. Here, the length of the on and off periods defined the different characters.
+
+More generally, the amplitude of the overall signal is varied in line with the incoming audio or other modulating signal, as shown in Figure 3-2. Here, the envelope of the carrier can be seen to change in line with the modulating signal. This is known as Amplitude Modulation (AM).
+
+
+Figure 3-2. An amplitude modulated signal.
+The demodulation process for AM where the radio frequency signal is converted into an audio frequency signal is very simple. It only requires a simple diode detector circuit like that shown in Figure 3-3. In this circuit the diode rectifies the signal, only allowing the one-half of the alternating radio frequency waveform through. A capacitor is used as a simple low-pass filter to remove the radio-frequency parts of the signal, leaving the audio waveform. This can be fed into an amplifier, after which it can be used to drive a loudspeaker. This form of demodulator is very cheap and easy to implement, and is still widely used in many AM receivers today.
+
+
+Figure 3-3. A simple diode detector circuit.
+The signal may also be demodulated more efficiently using a system known as synchronous detection (Figure 3-4). Here, the signal is mixed with a locally generated signal with the same frequency and phase as the carrier. In this way the signal is converted down to the baseband frequency. This system has the advantage of a more linear demodulation characteristic than the diode detector, and it is more resilient to various forms of distortion. There are various methods of generating the mix signal. One of the easiest is to take a feed from the signal being received and pass it through a very high-gain amplifier. This removes any modulation, leaving just the carrier with exactly the required frequency and phase. This can be mixed with the incoming signal and the result filtered to recover the original audio.
+
+
+Figure 3-4. Synchronous AM demodulation.

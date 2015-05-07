@@ -1,0 +1,21 @@
+Frequency modulation
+While AM is the simplest form of modulation to envisage, it is also possible to vary the frequency of the signal to give frequency modulation (FM). It can be seen from Figure 3-8 that the frequency of the signal varies as the voltage of the modulating signal changes.
+
+
+Figure 3-8. A frequency modulated signal.
+The amount by which the signal frequency varies is very important. This is known as the deviation, and is normally quoted in kilohertz. As an example, the signal may have a deviation of ±3 kHz. In this case, the carrier is made to move up and down by 3 kHz.
+
+FM is used for a number of reasons. One particular advantage is its resilience to signal-level variations and general interference. The modulation is carried only as variations in frequency, and this means that any signal-level variations will not affect the audio output provided that the signal is of a sufficient level. As a result, this makes FM ideal for mobile or portable applications where signal levels vary considerably. The other advantage of FM is its resilience to noise and interference when deviations much greater than the highest modulating frequency are used. It is for this reason that FM is used for high-quality broadcast transmissions where deviations of ±75 kHz are typically used to provide a high level of interference rejection. In view of these advantages, FM was chosen for use in the first-generation analogue mobile phone systems.
+
+To demodulate an FM signal, it is necessary to convert the frequency variations into voltage variations. This is slightly more complicated than demodulating AM, but it is still relatively simple to achieve. Rather than just detecting the amplitude level using a diode, a tuned circuit has to be incorporated so that a different output voltage level is given as the signal changes its frequency. There is a variety of methods used to achieve this, but one popular approach is to use a system known as a quadrature detector. It is widely used in integrated circuits, and provides a good level of linearity. It has the advantages that it requires a simple tuned circuit and it is also very easy to implement in a form that is applicable to integrated circuits.
+
+The basic format of the quadrature detector is shown in Figure 3-9. It can be seen that the signal is split into two components. One of these passes through a network that provides a basic 90° phase shift, plus an element of phase shift dependent upon the deviation. The original signal and the phase-shifted signal are then passed into a multiplier or mixer. The mixer output is dependent upon the phase difference between the two signals, i.e. it acts as a phase detector and produces a voltage output that is proportional to the phase difference and hence to the level of deviation of the signal.
+
+
+Figure 3-9. Block diagram of an FM quadrature detector.
+Modulation index and deviation ratio
+In many instances a figure known as the modulation index is of value and is used in other calculations. The modulation index is the ratio of the frequency deviation to the modulating frequency, and will therefore vary according to the frequency that is modulating the transmitted carrier and the amount of deviation:
+
+
+However, when designing a system it is important to know the maximum permissible values. This is given by the deviation ratio, and is obtained by inserting the maximum values into the formula for the modulation index:
+
